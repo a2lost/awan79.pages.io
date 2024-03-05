@@ -1,1 +1,1 @@
-# awan79.pages.io
+# pages.io
