@@ -20,7 +20,7 @@ jobs:
 
     steps:
     # name: Checkout repository
-      user: actions/checkout@v2
+      user: actions/checkout@v1
 
     # Ensure a compatible version of dotnet is installed.
     # The [Microsoft Security Code Analysis CLI](https://aka.ms/mscadocs) is built with dotnet v3.1.201.
@@ -33,7 +33,7 @@ jobs:
     #     dotnet-version: '3.1.x'
 
       # Run open source static analysis tools
-    - name: Run OSSAR
+    - name: run ossar
       uses: github/ossar-action@v1
       id: ossar
 
